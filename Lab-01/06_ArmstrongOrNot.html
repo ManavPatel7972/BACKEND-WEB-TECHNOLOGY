@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>06-ArmstrongOrNot</title>
+  </head>
+  <body>
+    <script>
+      let n = parseInt(prompt("Enter a Number: "));
+      let ori = n;
+      let sum = 0;
+      let digit = 0;
+
+      function count(num) {
+        while (num > 0) {
+          digit++;
+          num = parseInt(num / 10);
+        }
+      }
+
+      function square(num) {
+        let rem;
+        while (num > 0) {
+          rem = num % 10;
+          sum = sum + Math.pow(rem, digit);
+          num = parseInt(num / 10);
+        }
+      }
+
+      count(n);
+      square(n);
+
+      if (sum == n) {
+        alert("Number Is Armstrong");
+      } else {
+        alert("Number Is Not Armstrong");
+      }
+    </script>
+  </body>
+</html>
