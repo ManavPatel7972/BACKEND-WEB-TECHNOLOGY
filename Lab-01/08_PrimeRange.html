@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08-PrimeRange</title>
+  </head>
+  <body>
+    <script>
+      let n1 = parseInt(prompt("Enter a Number 1: "));
+      let n2 = parseInt(prompt("Enter a Number 2: "));
+
+      function primeOrNot(num) {
+        if (num == 1 || num == 0) {
+          return false;
+        }
+        for (i = 2; i <= Math.sqrt(num); i++) {
+          if (num % i == 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      function primeRange(n1, n2) {
+        for (i = n1; i <= n2; i++) {
+          if (primeOrNot(i)) {
+            console.log(i);
+          }
+        }
+      }
+
+      primeRange(n1, n2);
+    </script>
+  </body>
+</html>

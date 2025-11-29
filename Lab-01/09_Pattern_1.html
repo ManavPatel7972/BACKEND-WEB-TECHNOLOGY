@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pattern</title>
+  </head>
+  <body>
+    <script>
+      let n = parseInt(prompt("Enter a Number : "));
+
+      for (let i = 0; i < n; i++) {
+        for (let space = i + 1; space < n; space++) {
+          document.write("&nbsp");
+        }
+        for (let j = 0; j < i; j++) {
+          document.write("* ");
+        }
+        document.writeln("</br>");
+      }
+    </script>
+  </body>
+</html>

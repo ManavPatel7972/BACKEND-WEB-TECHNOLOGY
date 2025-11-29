@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05-Palindrome</title>
+  </head>
+  <body>
+    <script>
+      let n = parseInt(prompt("Enter a Number: "));
+      let ori = n;
+
+      let rev = 0;
+      let rem = 0;
+
+      while(ori>0){
+      rem = ori % 10;
+      rev = rev * 10 + rem;
+      ori = ori/10;
+      ori = parseInt(ori);
+      }
+      
+      if(rev == n){
+        alert("Palindrome")
+      }else{
+        alert("Not Palindrome");
+      }      
+    </script>
+  </body>
+</html>
