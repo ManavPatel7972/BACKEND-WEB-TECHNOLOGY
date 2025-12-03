@@ -1,0 +1,12 @@
+ Practice NPM CLI commands
+ 1. Create a new folder npm-lab-1 and initialize a Node project using npm. (A) 
+2. Compare the difference between npm init and npm init -y (A)
+ 3. Install the package named “cors” using npm. (A)
+ 4. Install the package named “nodemon” globally using npm. (A)
+ 5. Install the package named “express” with version “4.21.1” locally (A)
+ 6. Update the previously installed old version of express (B)
+ 7. Uninstall all the packages that are locally installed in this lab. (A)
+ 8. Uninstall globally installed “nodemon” package. (A)
+ 9. practice installing multiple packages using package.json (A)
+ 10. write a detailed note on package.json (B)
+ 11. List all local packages. (A)
