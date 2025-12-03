@@ -10,3 +10,21 @@
  9. practice installing multiple packages using package.json (A)
  10. write a detailed note on package.json (B)
  11. List all local packages. (A)
+
+
+// 10 - Json File : 
+
+ JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is often used for transmitting data in web applications between a server and a client.
+
+ Data Representation: JSON represents data as name/value pairs, similar to how objects are represented in JavaScript. Each name is followed by a colon and the value, and pairs are separated by commas.
+ 
+For example:
+
+{
+    "firstName": "Manav",
+    "lastName": "Delavadiya"
+}
+
+
+
+
