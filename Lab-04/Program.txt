@@ -1,0 +1,12 @@
+ Practice path and os core module
+ 1) Write a Node.js program that prints the directory name, le name, le extension, and full path of the code le. (A) 
+2) Create a program that joins "users", "arjun", "documents", "project" into a single path using path.join(). (A)
+ 3) Write a program to x the path="//folder//subfolder//// le.txt" using path.normalize() and display the clean normalised path. (A)
+ 4) Write a program that checks whether the given path is absolute or relative paths. (A)
+ 5) Write a Node.js program that uses path.resolve() to convert "folder", "subfolder", "app.js" into an absolute path. Print the nal 
+resolved path. (A)
+ 6) Write a program that prints: (A)
+ • Operating system name
+ • Release version
+ • Platform
+ • Architectur
