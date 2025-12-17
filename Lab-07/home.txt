@@ -1,0 +1,2 @@
+Welcome to NodeJS File Reader Web App
+This content is coming from home.txt
