@@ -1,0 +1,2 @@
+About Us
+This page is read from about.txt file using NodeJS
