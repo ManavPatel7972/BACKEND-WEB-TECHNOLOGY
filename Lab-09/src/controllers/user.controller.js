@@ -81,9 +81,13 @@ export const updateUser = async (req, res) => {
       res.status(400).json({ message: "Id is required" });
     }
 
-    const updatedUser = await User.findByIdAndUpdate(id, {
-      $set: req.body,
-    },{new: true});
+    const updatedUser = await User.findByIdAndUpdate(
+      id,
+      {
+        $set: req.body,
+      },
+      { new: true }
+    );
 
     if (!updatedUser) {
       res.status(404).json({ message: "User not found" });
@@ -133,4 +137,3 @@ export const getUserById = async (req, res) => {
     res.json({ message: "Error when getUserById User", error });
   }
 };
-
