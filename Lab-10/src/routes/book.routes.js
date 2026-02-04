@@ -14,12 +14,17 @@ import { authorizeRoles } from "../middlewares/role.middleware.js";
 
 router.post("/create", verifyJwt, authorizeRoles("ADMIN"), createBook);
 
-router.get("/getAllBooks", verifyJwt, authorizeRoles("ADMIN", "STUDENT"), getAllBooks);
+router.get(
+  "/getAllBooks",
+  verifyJwt,
+  authorizeRoles("ADMIN", "STUDENT"),
+  getAllBooks,
+);
 router.get(
   "/category/:category",
   verifyJwt,
   authorizeRoles("ADMIN", "STUDENT"),
-  getBooksByCategory
+  getBooksByCategory,
 );
 
 router.get("/:id", verifyJwt, authorizeRoles("ADMIN", "STUDENT"), getBookById);
